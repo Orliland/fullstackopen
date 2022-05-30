@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kitty Dating</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>Sign Up</h2>
+        <p>Create an account and find the love of your kitty life</p>
+      </header>
+
+      <form>
+        <label>Kitty name:</label>
+        <input type="text" name="name" required />
+
+        <label>Birthday:</label>
+        <input type="date" name="birthday" required />
+
+        <label>Remaining Lives</label>
+        <input type="number" name="lives" min="1" max="7" placeholder="7" />
+
+        <label>Vaccines <sup>*separated by a comma</sup></label>
+        <input type="text" name="vaccines" />
+
+        <label>Preferences</label>
+        <select name="preferences">
+          <option value="" disabled selected>Select an option</option>
+          <option value="">Angry Cats</option>
+          <option value="">Cute Cats</option>
+          <option value="">Serious Cats</option>
+          <option value="">Happy Cats</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <img src="./cat.jpeg" alt="A cute cat searching in a computer" />
+    </div>
+  </body>
+</html>
